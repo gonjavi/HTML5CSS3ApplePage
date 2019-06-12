@@ -1,0 +1,174 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+main{
+    position: realtive;
+    margin: auto;
+}
+/*
+*
+*
+* here is the fixed section
+*/
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 1%;
+    display: block;
+    width: 98%;
+    height: 62px;
+    background-color: rgba(255,255,255,0.9);
+    border-top: 0;
+    border-right: 6px solid black;
+    border-bottom: 6px solid black;
+    border-left: 6px solid black;
+    border-radius: 6px;
+
+}
+    
+/*
+*
+*
+* this is the css for nav bar
+*/
+nav{
+
+}
+
+/*
+*
+*
+* this is the css for the center class
+*/
+.center{
+position: relative;
+
+width: 100%;
+height: 538px;
+
+
+}
+
+/*
+*
+*
+* this is the css for the promo section
+*/
+.promo{
+    /*positioning*/
+    position: relative;
+    
+    /*Box model*/
+    display: block;
+    width: 100%    
+    /*typography*/
+    /*visual*/
+    
+    
+}
+
+.promo ul{
+    position: relative;
+    margin-top:  0;
+    margin-right:  0;
+    margin-bottom:  0;
+    
+    z-index: 1;
+}
+.promo img{
+    width: 336px;
+}
+#one{
+    float: left;
+}
+
+
+/*
+*
++
+*  styling for footer
+*/
+footer{
+    position: relative;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+
+    width: 100%;
+    height: 90px;
+}
+
+.wrapper{
+    /*Positioning*/
+    position: relative;
+    left: 10%;
+    right: 10%;
+    z-index: 2;
+
+    /*Box model*/
+    display: block;
+    width: 80%;
+
+    /*Typography*/
+    font-size: 10px;
+    color: #6e6e6e;
+
+    /*Visual*/
+    padding: 10px 0 26 0;
+   
+
+}
+
+.left{
+    /*positioning*/
+    position: relative;
+
+    /*Box model*/
+    display: block;
+    float: left;
+    width: 50%;
+    height: 27px;
+
+    /*Typography*/
+
+    /*Visual*/
+    padding-top: 15px;
+}
+
+.right{
+
+    position: relative;
+    display: block;
+    float: right;
+    width: 50%;
+    height: 27px;
+
+    color: #0088cc;
+    padding-top: 15px;
+
+
+}
+
+.left-bottom{
+    position: relative;
+    display: inline-block;
+    
+    width: 50%;
+    height: 27px;
+
+    
+    
+    padding-top: 15px;
+
+}
+
+footer list2{
+    display: inline-block;
+    float: left;
+}
