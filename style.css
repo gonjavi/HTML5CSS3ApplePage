@@ -3,20 +3,18 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
-  
 }
-
+body{
+    position: relative;
+    z-index: -1;
+}
 main{
     position: relative;
     z-index: -1;;
     margin: auto;
 }
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-    z-index: -1;
-} 
+    
 
 /*
 *
@@ -190,18 +188,26 @@ header{
 .promo{
     /*positioning*/
     position: relative;
+
+    /*Box model*/
     display: inline-block;
     width: 100%;    
-    z-index: 1;
-    margin-left: 2px;
+
+    /*typography*/
+    /*visual*/
+    
+    
 }
 
 .promo ul a{
     position: relative;
     display: inline;
+    
     z-index: 1;
+    
 }
 .promo img{
+    
     width: 337px;
 }
 #one,
