@@ -7,7 +7,7 @@ This project is based on this <a href="https://web.archive.org/web/2014030100461
 <h1><b> Author:</b></h1>
 <a href="https://github.com/gonjavi/">Gonzalo Javier Mancilla</a>
 
-<h1>Link of the live version:</h1> https://rawcdn.githack.com/gonjavi/apple/31a6ae983d3038c5c463e4228ba2eea507f140ec/index.html
+<h1>Link of the live version:</h1> https://raw.githack.com/gonjavi/apple/development/index.html
 
 
 
