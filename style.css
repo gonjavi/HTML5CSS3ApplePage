@@ -7,6 +7,7 @@
 body{
     position: relative;
     z-index: -1;
+    overflow-x: hidden;
 }
 main{
     position: relative;
@@ -32,10 +33,6 @@ background-size: cover;
 background-position: bottom;
 
 
-}
-#logo img{
-    width: 20px;
-    height: 20px;
 }
 /*
 *
@@ -68,12 +65,19 @@ nav{
     
 }
 
+#logo img{
+    z-index: -1;
+    width: 20px;
+    height: 20px;
+}
+
 nav ul li{
+    position: relative;
     display: inline-block;
     border-right: 2px solid gray;
     box-shadow: 0px 1px 2px gray;
 
-    width: 7%;
+    width: 106px;
     height: 36px;
     vertical-align: top;
     line-height: 34px;
@@ -83,33 +87,52 @@ nav ul li{
     cursor: pointer;
     
     background-color: gray;
-    background: -moz-linear-gradient(top, #737373 0%, #6e6e6e 50%, #696969 51%, #808080 100%);
+    background: -moz-linear-gradient(top, #737373 0%, #5F5F5F 50%, #696969 51%, #5F5F5F 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, #737373), color-stop(50%, #6e6e6e), color-stop(51%, #696969), color-stop(100%, #808080));
-    background: -webkit-linear-gradient(top, #737373 0%, #6e6e6e 50%, #696969 51%, #808080 100%);
-    background: -o-linear-gradient(top, #737373 0%, #6e6e6e 50%, #696969 51%, #808080 100%);
-    background: -ms-linear-gradient(top, #737373 0%, #6e6e6e 50%, #696969 51%, #808080 100%);
-    background: linear-gradient(to bottom, #737373 0%, #6e6e6e 50%, #696969 51%, #808080 100%);
+    background: -webkit-linear-gradient(top, #737373 0%, #6e6e6e 50%, #696969 51%, #5F5F5F 100%);
+    background: -o-linear-gradient(top, #737373 0%, #6e6e6e 50%, #696969 51%, #5F5F5F 100%);
+    background: -ms-linear-gradient(top, #747474 0%, #5F5F5F 50%, #696969 51%, #5F5F5F 100%);
+    background: linear-gradient(to bottom, #747474 0%, #717171 50%, #696969 51%, #5F5F5F 100%);
     
     
 }
+nav ul li a{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    color:white;
+}
+nav ul li a span{
+    position: relative;
+    z-index: 3;
+    display: block;
+    width: 103px;
+    height: 30px;
+    margin: 3px 0;
+
+}
+
+/* division where the search inout is*/
 #search{
     position: relative;
     display: inline-block;
-    width: 132px;
-    height: 35px;
-    padding: 8px 13px;
+    width: 135px;
+    height: 36px;
+    /*padding: 8px 13px;*/
 
 }
 #fafasearch{
     position: absolute;
-    top: 11px;
-    left: 30px;
+    top: 13px;
+    left: 20px;
     z-index: 2;
 }
 .center ul li input{
     position: absolute;
+    top: 10px;
     right: 20px;
-    left: 20px;
+    left: 12px;
     padding: 2px, 18px, 1px, 22px;
 
     display: inline-block;
@@ -121,7 +144,7 @@ nav ul li{
     padding-right: 18px;
     padding-left: 22px;
     box-shadow: 0px 1px 2px gray;
-    width: 95px;
+    width: 106px;
     height: 19px;
     
     background-color: gray;
@@ -132,19 +155,19 @@ nav ul li{
     background: -ms-linear-gradient(top, #737373 0%, #6e6e6e 50%, #696969 51%, #808080 100%);
     background: linear-gradient(to bottom, #737373 0%, #6e6e6e 50%, #696969 51%, #808080 100%);
     
+    
 
 }
-nav ul li a{
 
-    text-align: center;
-    width: auto;
-    text-decoration: none;
-    color:white;
-}
-
-/* header section inside center*/
+/* *
+*
+*header section inside center
+*
+*
+*/
 header{
     position: relative;
+    top: 60px;
     z-index: -1;
     text-align: center;
     padding: 50px 0;
@@ -186,17 +209,11 @@ header{
 * this is the css for the promo section
 */
 .promo{
-    /*positioning*/
+    
     position: relative;
-
-    /*Box model*/
     display: inline-block;
     width: 100%;    
 
-    /*typography*/
-    /*visual*/
-    
-    
 }
 
 .promo ul a{
@@ -208,12 +225,13 @@ header{
 }
 .promo img{
     
-    width: 337px;
+    width: 336px;
 }
 #one,
 #two,
 #three{
     float: left;
+    margin-right: 2.33px;
 }
 
 
@@ -232,7 +250,7 @@ footer{
     left: 0;
     display: block;
 
-    width: 100%;
+    width: 99%;
     height: 90px;
 }
 
@@ -294,6 +312,7 @@ footer{
 }
 .left-bottom{
     position: relative;
+    z-index: 3;
     display: block;
     float: left;
     width: 50%;
@@ -303,6 +322,7 @@ footer{
 }
 
 .left-bottom a{
+   
     padding: 5px;
 }
 #lefted{
