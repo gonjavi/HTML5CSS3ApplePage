@@ -182,13 +182,13 @@ section{
     position: relative;
     display: block;
     width: 70%;
-    height: 104px;
+    height: 98px;
     margin: 0 200px; 
     text-align: center;
 }
 .title2{
 
-    height: 82px;
+    height: 80px;
     margin: 0 200px;
     width: 70%;
     text-align: center;
@@ -262,7 +262,7 @@ footer{
     display: block;
 
     width: 99%;
-    height: 290px;
+    height: 310px;
 }
 /*
 *
