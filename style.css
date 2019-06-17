@@ -71,9 +71,10 @@ nav{
     height: 20px;
 }
 
+
 nav ul li{
     position: relative;
-    display: inline-block;
+    display: inline-flex;
     border-right: 2px solid gray;
     box-shadow: 0px 1px 2px gray;
 
@@ -165,77 +166,87 @@ nav ul li a span{
 *
 *
 */
-header{
+section{
     position: relative;
-    top: 60px;
+    top: 180px;
     z-index: -1;
+    display: block;
+    width: 100%;
+    height: 388px;
     text-align: center;
-    padding: 50px 0;
+    padding: 0;
 }
 
+/*  ids for h1s   inside there is an a and after the division*/
 .title1{
     position: relative;
-    display: inline;
-    margin: 0 230px; 
+    display: block;
+    width: 70%;
+    height: 104px;
+    margin: 0 200px; 
+    text-align: center;
+}
+.title2{
+
+    height: 82px;
+    margin: 0 200px;
+    width: 70%;
     text-align: center;
 }
 .title3{
     position: relative;
+    z-index: -1;
     display: block;
-    height: 31px;
-    z-index: 10;
-    overflow: hidden;
+    width: 70%;
+    height: 100px;
+    
+    margin: 40px 200px;
+    text-align: center;
     
 }
 
 .title3 a{
     position: relative;
-    display: inline-block;
+    display: block;
     width: 80%;
     height: 29px;
     margin: 0 18px 25px;
+    
 
 }
-.title3:hover{
-    overflow: visible;
-}
+
 .title a img{
     
     display: inline-block;
 }
-/*
-*
-*
-* this is the css for the promo section
-*/
-.promo{
-    
-    position: relative;
-    display: inline-block;
-    width: 100%;    
 
+/* division inside section a  to define background titles images*/
+#title1-url{
+    z-index: 3;
+    width: 100%;
+    height: 104px;
+    background-image: url("img/your_verse_title_small.png");
+}
+#title2-url{
+
+    width: 100%;
+    height: 82px;
+    background-image: url("img/your_verse_subhead_small.png");
 }
 
-.promo ul a{
-    position: relative;
-    display: inline;
+#title3-url{
+    width: 100%;
+    height: 29px;
+    margin-left: 0;
+    margin-right: 0;
+    background-image: url("img/cta_your_verse_27pt.png");
+   
     
-    z-index: 1;
     
 }
-.promo img{
-    
-    width: 336px;
+#title3-url:hover{
+   height: 65px;
 }
-#one,
-#two,
-#three{
-    float: left;
-    margin-right: 2.33px;
-}
-
-
-
 
 /*
 *
@@ -251,8 +262,58 @@ footer{
     display: block;
 
     width: 99%;
-    height: 90px;
+    height: 290px;
 }
+/*
+*
+*
+* this is the css for the promo section
+*/
+.promo{
+    
+    position: relative;
+    display: flex;
+    width: 1351px;    
+
+}
+.promo ul{
+    position: relative;
+    width: 1351px;
+}
+.promo ul li{
+    position: relative;
+    display: inline-flex;
+    
+    z-index: 1;
+    
+}
+/* background pictures */
+.promo li a div{
+    
+    width: 334px;
+    height: 200px;
+}
+#one,
+#two,
+#three{
+   
+    margin-right: 0.5px;
+}
+
+#one{
+    background-image: url("img/promo_iphone5s.jpg");
+}
+#two{
+    background-image: url("img/promo_iphone5c.jpg");
+}
+#three{
+    background-image: url("img/promo_30_years.jpg");
+}
+#four{
+    background-image: url("img/promo_supplier_responsibility.jpg");
+}
+
+/* wrapper below promo*/
 
 .wrapper{
     /*Positioning*/
