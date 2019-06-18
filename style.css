@@ -1,0 +1,393 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+body{
+    position: relative;
+    z-index: -1;
+    overflow-x: hidden;
+}
+main{
+    position: relative;
+    z-index: -1;;
+    margin: auto;
+}
+
+    
+
+/*
+*
+*
+* this is the css for the center class
+*/
+.center{
+position: relative;
+z-index: -1;
+display: block;
+width: 100%;
+height: 538px;
+background-image: url("https://raw.githubusercontent.com/trox115/apple/development/img/background.jpg");
+background-size: cover;
+background-position: bottom;
+
+
+}
+/*
+*
+*
+* this is the css for nav bar
+*/
+nav{
+    position: relative;
+    z-index: 1;
+    top: 18px;
+    
+    display: block;
+    width: 100%;
+    height: 36px;
+    text-align: center;
+    float: left;
+    margin-top: 90px;
+    
+}
+
+.hover:hover{
+    background: rgba(76,76,76,1);
+    background: -moz-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(76,76,76,1)), color-stop(12%, rgba(89,89,89,1)), color-stop(25%, rgba(102,102,102,1)), color-stop(39%, rgba(71,71,71,1)), color-stop(50%, rgba(44,44,44,1)), color-stop(51%, rgba(0,0,0,1)), color-stop(60%, rgba(17,17,17,1)), color-stop(76%, rgba(43,43,43,1)), color-stop(91%, rgba(28,28,28,1)), color-stop(100%, rgba(19,19,19,1)));
+    background: -webkit-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+    background: -o-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+    background: -ms-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+    background: linear-gradient(to bottom, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=0 );
+    
+}
+
+#logo img{
+    z-index: -1;
+    width: 20px;
+    height: 20px;
+}
+
+
+nav ul li{
+    position: relative;
+    display: inline-flex;
+    border-right: 2px solid gray;
+    box-shadow: 0px 1px 2px gray;
+
+    width: 106px;
+    height: 36px;
+    vertical-align: top;
+    line-height: 34px;
+    font-size: small;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    
+    background-color: gray;
+    background: -moz-linear-gradient(top, #737373 0%, #5F5F5F 50%, #696969 51%, #5F5F5F 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #737373), color-stop(50%, #6e6e6e), color-stop(51%, #696969), color-stop(100%, #808080));
+    background: -webkit-linear-gradient(top, #737373 0%, #6e6e6e 50%, #696969 51%, #5F5F5F 100%);
+    background: -o-linear-gradient(top, #737373 0%, #6e6e6e 50%, #696969 51%, #5F5F5F 100%);
+    background: -ms-linear-gradient(top, #747474 0%, #5F5F5F 50%, #696969 51%, #5F5F5F 100%);
+    background: linear-gradient(to bottom, #747474 0%, #717171 50%, #696969 51%, #5F5F5F 100%);
+    
+    
+}
+nav ul li a{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    color:white;
+}
+nav ul li a span{
+    position: relative;
+    z-index: 3;
+    display: block;
+    width: 103px;
+    height: 30px;
+    margin: 3px 0;
+
+}
+
+/* division where the search inout is*/
+#search{
+    position: relative;
+    display: inline-block;
+    width: 135px;
+    height: 36px;
+    /*padding: 8px 13px;*/
+
+}
+#fafasearch{
+    position: absolute;
+    top: 13px;
+    left: 20px;
+    z-index: 2;
+}
+.center ul li input{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    left: 12px;
+    padding: 2px, 18px, 1px, 22px;
+
+    display: inline-block;
+    border-radius: 10px;
+    border-collapse: gray;
+    border-right: 2px solid gray;
+    margin-bottom: 7px;
+    border-bottom: 1px; 
+    padding-right: 18px;
+    padding-left: 22px;
+    box-shadow: 0px 1px 2px gray;
+    width: 106px;
+    height: 19px;
+    
+    background-color: gray;
+    background: -moz-linear-gradient(top, #737373 0%, #6e6e6e 50%, #696969 51%, #808080 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #737373), color-stop(50%, #6e6e6e), color-stop(51%, #696969), color-stop(100%, #808080));
+    background: -webkit-linear-gradient(top, #737373 0%, #6e6e6e 50%, #696969 51%, #808080 100%);
+    background: -o-linear-gradient(top, #737373 0%, #6e6e6e 50%, #696969 51%, #808080 100%);
+    background: -ms-linear-gradient(top, #737373 0%, #6e6e6e 50%, #696969 51%, #808080 100%);
+    background: linear-gradient(to bottom, #737373 0%, #6e6e6e 50%, #696969 51%, #808080 100%);
+    
+    
+
+}
+
+/* *
+*
+*header section inside center
+*
+*
+*/
+section{
+    position: relative;
+    top: 180px;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 388px;
+    text-align: center;
+    padding: 0;
+}
+
+/*  ids for h1s   inside there is an a and after the division*/
+.title1{
+    position: relative;
+    display: block;
+    width: 70%;
+    height: 98px;
+    margin: 0 200px; 
+    text-align: center;
+}
+.title2{
+
+    height: 80px;
+    margin: 0 200px;
+    width: 70%;
+    text-align: center;
+}
+.title3{
+    position: relative;
+    z-index: -1;
+    display: block;
+    width: 70%;
+    height: 100px;
+    
+    margin: 40px 200px;
+    text-align: center;
+    
+}
+
+.title3 a{
+    position: relative;
+    display: block;
+    width: 80%;
+    height: 29px;
+    margin: 0 18px 25px;
+    
+
+}
+
+.title a img{
+    
+    display: inline-block;
+}
+
+/* division inside section a  to define background titles images*/
+#title1-url{
+    z-index: 3;
+    width: 100%;
+    height: 104px;
+    background-image: url("img/your_verse_title_small.png");
+}
+#title2-url{
+
+    width: 100%;
+    height: 82px;
+    background-image: url("img/your_verse_subhead_small.png");
+}
+
+#title3-url{
+    width: 100%;
+    height: 29px;
+    margin-left: 0;
+    margin-right: 0;
+    background-image: url("img/cta_your_verse_27pt.png");
+   
+    
+    
+}
+#title3-url:hover{
+   height: 65px;
+}
+
+/*
+*
++
+*  styling for the whole footer
+*/
+footer{
+    position: relative;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+
+    width: 99%;
+    height: 310px;
+}
+/*
+*
+*
+* this is the css for the promo section
+*/
+.promo{
+    
+    position: relative;
+    display: flex;
+    width: 1351px;    
+
+}
+.promo ul{
+    position: relative;
+    width: 1351px;
+}
+.promo ul li{
+    position: relative;
+    display: inline-flex;
+    
+    z-index: 1;
+    
+}
+/* background pictures */
+.promo li a div{
+    
+    width: 334px;
+    height: 200px;
+}
+#one,
+#two,
+#three{
+   
+    margin-right: 0.5px;
+}
+
+#one{
+    background-image: url("img/promo_iphone5s.jpg");
+}
+#two{
+    background-image: url("img/promo_iphone5c.jpg");
+}
+#three{
+    background-image: url("img/promo_30_years.jpg");
+}
+#four{
+    background-image: url("img/promo_supplier_responsibility.jpg");
+}
+
+/* wrapper below promo*/
+
+.wrapper{
+    /*Positioning*/
+    position: relative;
+    left: 14%;
+    right: 14%;
+    z-index: 2;
+
+    /*Box model*/
+    display: block;
+    width: 80%;
+
+    /*Typography*/
+    font-size: 10px;
+    color: #6e6e6e;
+
+    /*Visual*/
+    padding: 10px 0 26 0;
+   
+
+}
+
+.left{
+    /*positioning*/
+    position: relative;
+
+    /*Box model*/
+    display: block;
+    float: left;
+    width: 50%;
+    height: 27px;
+
+    /*Typography*/
+
+    /*Visual*/
+    padding-top: 15px;
+}
+
+.right{
+    position: relative;
+    display: inline;
+    float: right;
+    width: 50%;
+    
+
+    color: #0088cc;
+    padding-top: 15px;
+}
+.right li{   display: inline;}
+
+.right li a{
+    padding: 5px;
+    border-right: 1px solid gray;
+}
+#usa{
+    border-right: none;
+}
+.left-bottom{
+    position: relative;
+    z-index: 3;
+    display: block;
+    float: left;
+    width: 50%;
+    
+
+    padding-top: 15px;
+}
+
+.left-bottom a{
+   
+    padding: 5px;
+}
+#lefted{
+   
+    border-right: 1px solid gray;
+}
+
